@@ -1,0 +1,22 @@
+services:
+  frontend:
+    build: ./react
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+    networks:
+      - portfolio-network
+    # Forces the build to use a standard platform if you're on a newer Mac
+    platform: linux/amd64 
+
+  api:
+    build: ./api
+    ports:
+      - "8080:8080"
+    networks:
+      - portfolio-network
+
+networks:
+  portfolio-network:
+    driver: bridge
