@@ -2,12 +2,7 @@
 node_modules/
 dist/
 .eslintcache
-
-# Java / Maven
-target/
-*.class
-*.jar
-.mvn/
+*.log
 
 # IDEs & System
 .idea/
@@ -16,3 +11,7 @@ target/
 
 # Secrets 
 .env
+.env.*
+!.env.example
+.vercel/
+.impeccable/

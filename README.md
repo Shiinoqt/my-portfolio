@@ -1,28 +1,32 @@
-# Portfolio App (Full-Stack)
-This project uses **React** for the frontend and **Spring Boot** for the REST API
+# Damien's desktop
 
----
-### Frontend
-* **Framework:** React (via Vite)
+My portfolio: a macOS-inspired desktop built with React and Vite, with a glass dock, solid graphite windows, a sculptural black wallpaper, and Italian/English localization.
 
-### Backend
-* **Framework:** Spring Boot 3.x
-* **Language:** Java 17
-* **Build Tool:** Maven
-* **Dependencies:** Spring Web, Lombok
+## Run locally
 
-### Infrastructure
-* **Containerization:** Docker & Docker Compose
----
+Use Node.js 22.12+.
 
-## 🛠️ Getting Started
+```sh
+cd react
+npm ci
+npm run dev
+```
 
-### Prerequisites
-* [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running.
-* (Optional) Node.js and JDK 17 for local development without Docker.
+## Check and build
 
-### Running with Docker (Recommended)
-To spin up the entire environment (Frontend + API), simply run:
+```sh
+cd react
+npm test
+npm run lint
+npm run build
+npm run preview
+```
 
-```bash
-docker-compose up --build
+## Content
+
+- **Text and links:** `react/src/content.js` holds both translations, the social links and the public email. Italian is the default; the IT/EN switch saves the visitor's choice locally. There is no backend.
+- **Apps:** the dock has Welcome, About, the Rebyte project (a work-in-progress marketplace, described in its own window with no link yet), GitHub, LinkedIn, Instagram, Contact and Settings. Social apps open the real profiles in a new tab. Contact's Email row opens the visitor's mail app and also copies the address.
+- **Skills:** the logo grid in About comes from `react/src/skills.js`, generated from Simple Icons (CC0). To change it, edit the `pick` list in `react/scripts/gen-skills.cjs` and run `npm run skills`.
+- **Wallpaper:** `react/public/wallpaper.jpg` is an original image generated with Codex and upscaled to 3200×2000. Prompt: OLED-black liquid glass folds, sinuous curves, delicate silver rim lighting and restrained blue/cyan/violet/amber refraction; wide landscape composition with a calm dark center, no text or UI.
+
+Windows behave like macOS: drag them by the title bar, minimize into the dock and restore with position and scroll kept, maximize with the green button or a title-bar double-click, or find an app with Ctrl+K / Command+K. Settings contains Reduce Motion and Language; the system reduced-motion preference is respected too.
