@@ -2,7 +2,7 @@ export const email = 'damienrebong@outlook.com'
 
 export const socialLinks = {
   github: 'https://github.com/Shiinoqt',
-  linkedin: 'https://www.linkedin.com/in/pierre-damien-ramillano-rebong-0b3811316/',
+  linkedin: 'https://www.linkedin.com/in/damienrbg/',
   instagram: 'https://www.instagram.com/damienrebs/',
 }
 
