@@ -195,7 +195,6 @@ function App() {
               <ul className="skills">{skills.map(skill => <li key={skill.name}><span className="skill-icon" style={{ color: skill.color }}><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={skill.path} /></svg></span>{skill.name}</li>)}</ul>
               <button className="text-link" onClick={event => openApp('contact', event)}>{t.connect}<Icon name="chevron" size={14} /></button>
             </div>}
-            {activeApp === 'rebyte' && <div className="page-content"><h1 className="page-title">Rebyte</h1><p>{t.rebyteIntro}</p><p>{t.rebyteStack}</p><p>{t.rebyteStatus}</p></div>}
             {activeApp === 'contact' && <div className="page-content contact-content"><h1 className="page-title">{t.contactTitle}</h1><p className="page-description">{t.contactIntro}</p><div className="contact-links"><a href={`mailto:${email}`} onClick={copyEmail}><span className="app-icon contact"><Icon name="contact" size={20} /></span><strong aria-live="polite">{emailCopied ? t.emailCopied : 'Email'}</strong><Icon name="arrow" size={16} /></a>{['linkedin', 'github', 'instagram'].map(app => <a key={app} href={socialLinks[app]} target="_blank" rel="noopener noreferrer" aria-label={`${t.apps[app]} — ${t.external}`}><span className={`app-icon ${app}`}><Icon name={app} size={20} /></span><strong>{t.apps[app]}</strong><Icon name="arrow" size={16} /></a>)}</div>
             </div>}
             {activeApp === 'settings' && <div className="settings-content">

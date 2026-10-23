@@ -22,8 +22,8 @@ export default function Icon({ name, size = 20, ...props }) {
     dock: <><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M7 16h10" strokeWidth="2.5" /></>,
     displays: <><circle cx="12" cy="12" r="4" fill="currentColor" /><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></>,
     spotlight: <><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 5 5" /></>,
-    // Rebyte: a chip inside a circular arrow, for second-hand tech.
-    rebyte: <><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><rect x="8.5" y="8.5" width="7" height="7" rx="1.5" /></>,
+    // Rebyte's "r" mark from the rebyte.tech favicon, scaled to 24px.
+    rebyte: <path d="M9.4 16.7V7.3m0 4.1c0-2.7 1.9-4.1 5.6-4.1" strokeWidth="3.15" />,
     code:<path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18" />,
   }
   return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>{paths[name] || paths.code}</svg>

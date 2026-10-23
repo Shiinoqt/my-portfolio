@@ -4,6 +4,7 @@ export const socialLinks = {
   github: 'https://github.com/Shiinoqt',
   linkedin: 'https://www.linkedin.com/in/damienrbg/',
   instagram: 'https://www.instagram.com/damienrebs/',
+  rebyte: 'https://rebyte.tech/',
 }
 
 export const copy = {
@@ -21,9 +22,6 @@ export const copy = {
     bioMore: 'Quando ho un’idea non riesco a lasciarla su un foglio: voglio vederla funzionare. Per questo seguo i progetti dall’inizio alla fine, dal database all’interfaccia.',
     bioAi: 'L’AI è il mio acceleratore: le idee e le scelte restano mie, lei mi aiuta a renderle reali più in fretta.',
     skillsTitle: 'Con cosa lavoro',
-    rebyteIntro: 'Un marketplace di hardware e software di seconda mano: annunci, ricerca, messaggi, acquisto e consegna. L’hardware si spedisce, il software si scarica subito con una licenza.',
-    rebyteStack: 'Dietro, microservizi Spring Boot con Eureka e Spring Cloud Gateway, MySQL e MongoDB, Redis, RabbitMQ e Meilisearch. Davanti, Angular.',
-    rebyteStatus: 'È ancora in sviluppo e non è online: per ora lo racconto qui.',
     connect: 'Conosciamoci',
     contactTitle: 'Le belle cose iniziano\ncon un ciao.',
     contactIntro: 'Un’opportunità, un’idea o una semplice chiacchierata? Scrivimi una mail o trovami su LinkedIn.', external: 'Si apre in una nuova scheda', emailCopied: 'Indirizzo copiato',
@@ -47,9 +45,6 @@ export const copy = {
     bioMore: 'When I have an idea, I can’t leave it on paper; I want to see it work. That’s why I follow projects from start to finish, from the database to the interface.',
     bioAi: 'AI is my accelerator: the ideas and decisions stay mine, it just helps me make them real faster.',
     skillsTitle: 'What I work with',
-    rebyteIntro: 'A marketplace for second-hand hardware and software: listings, search, messaging, checkout and delivery. Hardware ships, software downloads instantly with a licence.',
-    rebyteStack: 'Behind it, Spring Boot microservices with Eureka and Spring Cloud Gateway, MySQL and MongoDB, Redis, RabbitMQ and Meilisearch. Up front, Angular.',
-    rebyteStatus: 'It’s still in development and not online yet, so for now it lives here.',
     connect: 'Let’s connect',
     contactTitle: 'Good things start\nwith a hello.',
     contactIntro: 'An opportunity, an idea, or just a conversation? Send me an email or find me on LinkedIn.', external: 'Opens in a new tab', emailCopied: 'Address copied',
