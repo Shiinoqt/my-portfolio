@@ -24,6 +24,8 @@ export default function Icon({ name, size = 20, ...props }) {
     spotlight: <><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 5 5" /></>,
     // Rebyte's "r" mark from the rebyte.tech favicon, scaled to 24px.
     rebyte: <path d="M9.4 16.7V7.3m0 4.1c0-2.7 1.9-4.1 5.6-4.1" strokeWidth="3.15" />,
+    // Post Your Stuff's stacked-cards mark from the postyourstuff.app favicon, scaled from 64px.
+    postyourstuff: <g transform="scale(.375) translate(0 -1)" stroke="none" fill="currentColor"><path opacity=".55" d="M14 8H36Q44 8 44 16V18H24Q14 18 14 28V46H12Q6 46 6 40V16Q6 8 14 8Z" /><path fillRule="evenodd" d="M26 22H50Q58 22 58 30V50Q58 58 50 58H26Q18 58 18 50V30Q18 22 26 22Z M25 40L30 35L36 41L47 30L52 35L36 51Z" /></g>,
     code:<path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18" />,
   }
   return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>{paths[name] || paths.code}</svg>

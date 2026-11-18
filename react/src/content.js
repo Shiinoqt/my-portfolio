@@ -5,12 +5,13 @@ export const socialLinks = {
   linkedin: 'https://www.linkedin.com/in/damienrbg/',
   instagram: 'https://www.instagram.com/damienrebs/',
   rebyte: 'https://rebyte.tech/',
+  postyourstuff: 'https://postyourstuff.app/',
 }
 
 export const copy = {
   it: {
     locale: 'it-IT', title: 'Pierre Damien Ramillano Rebong — Full Stack Developer', desktop: 'Scrivania',
-    apps: { welcome: 'Benvenuto', about: 'Chi sono', rebyte: 'Rebyte', contact: 'Contatti', settings: 'Impostazioni', github: 'GitHub', linkedin: 'LinkedIn', instagram: 'Instagram' },
+    apps: { welcome: 'Benvenuto', about: 'Chi sono', rebyte: 'Rebyte', postyourstuff: 'Post Your Stuff', contact: 'Contatti', settings: 'Impostazioni', github: 'GitHub', linkedin: 'LinkedIn', instagram: 'Instagram' },
     menu: 'Menu della scrivania', clock: 'Data e ora',
     language: 'Switch to English', sound: 'Impostazioni della scrivania', search: 'Cerca un’app',
     close: 'Chiudi finestra', minimize: 'Riduci a icona', maximize: 'Espandi finestra', restore: 'Ripristina finestra',
@@ -33,7 +34,7 @@ export const copy = {
   },
   en: {
     locale: 'en-GB', title: 'Pierre Damien Ramillano Rebong — Full Stack Developer', desktop: 'Desktop',
-    apps: { welcome: 'Welcome', about: 'About me', rebyte: 'Rebyte', contact: 'Contact', settings: 'Settings', github: 'GitHub', linkedin: 'LinkedIn', instagram: 'Instagram' },
+    apps: { welcome: 'Welcome', about: 'About me', rebyte: 'Rebyte', postyourstuff: 'Post Your Stuff', contact: 'Contact', settings: 'Settings', github: 'GitHub', linkedin: 'LinkedIn', instagram: 'Instagram' },
     menu: 'Desktop menu', clock: 'Date and time',
     language: 'Passa all’italiano', sound: 'Desktop settings', search: 'Search for an app',
     close: 'Close window', minimize: 'Minimize window', maximize: 'Expand window', restore: 'Restore window',

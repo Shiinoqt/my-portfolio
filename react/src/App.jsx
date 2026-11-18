@@ -5,7 +5,7 @@ import { copy, email, socialLinks } from './content'
 import { skills } from './skills'
 import './App.css'
 
-const dockApps = ['welcome', 'about', 'rebyte', 'github', 'linkedin', 'instagram', 'contact', 'settings']
+const dockApps = ['welcome', 'about', 'rebyte', 'postyourstuff', 'github', 'linkedin', 'instagram', 'contact', 'settings']
 const settingsNav = [['wifi', 'bluetooth', 'network', 'energy'], ['general', 'accessibility', 'appearance', 'menubar', 'dock', 'displays', 'spotlight']]
 
 function App() {
@@ -233,7 +233,7 @@ function App() {
         </section>}
       </main>
       <nav className="dock glass" aria-label={t.desktop}>
-        {dockApps.map((app, index) => <div className={`dock-item ${index === 3 || index === 7 ? 'dock-separated' : ''}`} key={app} data-app={app}>
+        {dockApps.map((app, index) => <div className={`dock-item ${index === 4 || index === 8 ? 'dock-separated' : ''}`} key={app} data-app={app}>
           {appLink(app, `dock-button ${activeApp === app && windowVisible ? 'app-active' : ''}`, <><span className={`app-icon ${app}`}><Icon name={app} size={31} /></span><span className="dock-tooltip">{t.apps[app]}</span><span className={`app-indicator ${activeApp === app ? 'is-open' : ''}`} /></>)}
         </div>)}
       </nav>
